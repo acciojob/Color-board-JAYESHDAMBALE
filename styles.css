@@ -1,23 +1,13 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #111;
-  height: 100vh;
-  margin: 0;
+.container{
+	display: grid;
+	grid-template-columns: repeat(40,1fr); /* 40x20 grid = 800 boxes */
+	width: 400px;
+	gap: 2px;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 20px);
-  grid-gap: 2px;
-  max-width: 900px;
-}
-
-.square {
-  width: 20px;
-  height: 20px;
-  background: #1d1d1d;
-  transition: background 1s ease; /* smooth disappear effect */
-  cursor: pointer;
+.square{
+	width: 10px;
+	height: 10px;
+	background-color: #ddd;
+	transition: background-color 1s ease; /* smooth fade out */
 }
