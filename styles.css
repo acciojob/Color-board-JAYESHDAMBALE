@@ -1,13 +1,12 @@
 .container {
     display: grid;
-    grid-template-columns: repeat(40, 1fr);
-    width: 400px;
+    grid-template-columns: repeat(40, 10px);
     gap: 2px;
 }
 
 .square {
     width: 10px;
     height: 10px;
-    background-color: rgb(29, 29, 29);  /* test requires this exact color */
+    background-color: rgb(29, 29, 29);
     transition: background-color 1s ease;
 }
