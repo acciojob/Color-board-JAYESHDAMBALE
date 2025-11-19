@@ -7,7 +7,6 @@ for (let index = 0; index < totalSquare; index++) {
 
     square.addEventListener('mouseover', () => {
         const randomColor = getRandomColor();
-
         square.style.backgroundColor = randomColor;
 
         setTimeout(() => {

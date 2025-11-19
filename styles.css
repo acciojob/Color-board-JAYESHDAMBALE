@@ -1,12 +1,15 @@
+/* container: 40 columns of 10px each => 40 * 10px + gaps */
 .container {
     display: grid;
     grid-template-columns: repeat(40, 10px);
     gap: 2px;
+    /* no fixed width required — grid will size based on columns */
 }
 
+/* squares must be visible and have exact initial color expected by tests */
 .square {
     width: 10px;
     height: 10px;
-    background-color: rgb(29, 29, 29);
-    transition: background-color 1s ease;
+    background-color: rgb(29, 29, 29); /* exact color Cypress expects */
+    transition: background-color 1s ease; /* smooth fade back in 1s */
 }
