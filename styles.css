@@ -1,13 +1,13 @@
-.container{
-	display: grid;
-	grid-template-columns: repeat(40,1fr); /* 40x20 grid = 800 boxes */
-	width: 400px;
-	gap: 2px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    width: 400px;
+    gap: 2px;
 }
 
-.square{
-	width: 10px;
-	height: 10px;
-	background-color: #ddd;
-	transition: background-color 1s ease; /* smooth fade out */
+.square {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(29, 29, 29);  /* test requires this exact color */
+    transition: background-color 1s ease;
 }
